@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Management</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Author Management</h1>
+<a href="./create.html">sukurti</a>
+
+    <div class="authors-container">
+        
+        <h2>Authors List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Surname</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="authors-list">
+                <!-- Authors will be appended here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../app.js">
+    </script>
+    <script>
+        fetchAuthors();
+    </script>
+</body>
+</html>
